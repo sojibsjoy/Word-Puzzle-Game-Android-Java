@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Word Puzzle Game</string>
+    <string name="title">Word Search Puzzle</string>
+    <string name="play_button">Play</string>
+    <string name="company_name">Increment Inc.</string>
+    <string name="play_mode_text">Play Mode</string>
+    <string name="result_title">Congratulations!</string>
+</resources>

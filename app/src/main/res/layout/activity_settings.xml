@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/back_icon"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="backIcon"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="300dp"
+            android:src="@drawable/help"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="helpIcon"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:textSize="30sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/settings_curve_design">
+
+<!--        Language-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/eng"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Language (English)"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="languageIcon"/>
+
+        </LinearLayout>
+
+<!--        Sound-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/sound"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Sound"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="soundIcon"/>
+
+        </LinearLayout>
+
+<!--        Night Mode-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/moon"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Night Mode"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="nightMode"/>
+
+        </LinearLayout>
+
+<!--        Grid-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/metrix"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Grid"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="gridIcon"/>
+
+        </LinearLayout>
+
+<!--        Marquee-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/marquee"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Marquee"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="marqueeIcon"/>
+
+        </LinearLayout>
+
+<!--        Letter Animation-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="3dp"
+                android:src="@drawable/letter"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Letter Animation"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="letterAnimationIcon"/>
+
+        </LinearLayout>
+
+<!--        No. of Word Columns-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/column"
+                android:padding="5dp"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="No. of Word Columns"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="noOfWordColumnIcon"/>
+
+        </LinearLayout>
+
+<!--        Logout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="logoutIcon">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logout"
+                android:padding="2dp"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+<!--        Privacy-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="40dp"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="privacyIcon">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/privacy"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="Privacy"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
